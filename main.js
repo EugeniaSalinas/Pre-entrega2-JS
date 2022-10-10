@@ -1,6 +1,5 @@
 /* El proyecto trata sobre una página donde las personas podrán completar un formulario con
-materiales reciclables que tengan en sus hogares, a partir de esa acción se obtendran CRÉDITOS VERDES
-que podrán cambiar en negocios sustentables adheridos.*/
+materiales reciclables que tengan en sus hogares.*/
 
 
 function pedirUsuario(){
@@ -10,32 +9,10 @@ function pedirUsuario(){
 }
 
 
-/*Se definen los precios que pagan las recicladoras por los materiales
-  Actualmente 1 CREDITO VERDE = 25$ 
-  Por lo tanto dependiento del material juntado se obtendrá determinado crédito verde*/
-
-let precioVidrio = 10
-let precioPlastico = 8.5
-let precioCarton = 15.5
-let precioPapel = 9
 
 
+pedirUsuario();
 
-//pedirUsuario();
-//calcularCreditosVerdes();
-
-
-
-
-/*let material;
-
-while ((material !== "salir") || (material != null)){
-
-    material = prompt(`Que material has juntado en tu domicilio? vidrio, carton, papel o plastico.\nPresiona cancelar para salir`);
-    let cuantoMaterial = parseFloat(prompt(`Cuanto ${material.toLowerCase()} tienes en kg? Colocar solo el numero`));
-    
-}
-*/
 
 
 //CLASE CONSTRUCTORA
@@ -52,7 +29,7 @@ let listaMateriales = [];
 
 
 
-//DECLARACION FUNCION PARA CONOCER LOS OBEJTOS DEL ARRAY
+//DECLARACION FUNCION PARA CONOCER LOS OBJETOS DEL ARRAY
 
 function conocerLista() {
     if (listaMateriales.length == 0) {
@@ -68,8 +45,7 @@ function conocerLista() {
 const agregarMaterial = () =>{
     let material = prompt(`Que material has juntado en tu domicilio? vidrio, carton, papel o plastico.\nPresiona cancelar para salir`);
     let cuantoEnKg = parseFloat(prompt(`Cuanto ${material.toLowerCase()} tienes en kg? Colocar solo el numero`));
-
-
+    
         //FUNCION PARA SEGUIR AGREGANDO
         const respuestaMaterial = (opcionElegida)=> {
         
